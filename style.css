@@ -1,3 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* we always want to specify everything Font related in the Body element instead of the Universal selector */
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #395b64;
+  padding: 1%;
+}
+
+.header {
+  /* Below we set the hight of the box to 95% of the viewport */
+  height: 95vh;
+  background-color: #f7f7f7;
+  /* background-image: linear-gradient(
+      to right bottom,
+      hsla(111, 55%, 64%, 0.8),
+      hsla(160, 64%, 43%, 0.8)
+    ),
+    url(../img/hero.jpg);
+  background-size: cover; */
+  /* code below makes sure that the top of the image always stays on top of the container and only the bottom of the image gets cropped */
+  /* background-position: top; */
+
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
 .dark-text {
   color: #395b64;
 }
