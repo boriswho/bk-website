@@ -11,26 +11,72 @@ body {
   font-size: 1rem;
   line-height: 1.7;
   color: #395b64;
-  padding: 1%;
+  /* background-color: black; */
+  padding: 3% 9%;
 }
 
-.header {
-  /* Below we set the hight of the box to 95% of the viewport */
-  height: 95vh;
-  background-color: #f7f7f7;
-  /* background-image: linear-gradient(
-      to right bottom,
-      hsla(111, 55%, 64%, 0.8),
-      hsla(160, 64%, 43%, 0.8)
-    ),
-    url(../img/hero.jpg);
-  background-size: cover; */
-  /* code below makes sure that the top of the image always stays on top of the container and only the bottom of the image gets cropped */
-  /* background-position: top; */
-
-  clip-path: polygon(100% 0, 0 0, 100% 100%);
-}
+/* NAVBAR */
 
 .dark-text {
   color: #395b64;
+}
+
+.upper-text {
+  text-transform: uppercase;
+}
+/* .nav-link {
+  margin-right: 10px;
+} */
+
+.nav-link:hover {
+  color: #5f94a1;
+}
+.nav-link:focus {
+  color: #395b64;
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+/* TITLE  */
+
+#title .container-fluid {
+  text-align: center;
+}
+
+.large-text {
+  font-size: 5rem;
+  color: #a5c9ca;
+}
+
+.title-text {
+  display: inline-block;
+  margin-top: 6%;
+}
+
+.small-text {
+  font-size: 1.3rem;
+}
+
+/* LATEST WORK  */
+
+.rectangular-img {
+  /* display: block; */
+  /* width: 250px;
+  height: 350px; */
+  width: 70%;
+}
+
+.latest-work-position {
+  margin-top: 7%;
+}
+
+.latest-work-img {
+  width: 70%;
+}
+
+/* HR  */
+.hr-circle {
+  margin-top: 2%;
 }
