@@ -5,6 +5,16 @@
 }
 
 /* we always want to specify everything Font related in the Body element instead of the Universal selector */
+
+/* html,
+body {
+  position: relative;
+  height: 100%;
+} */
+
+img {
+  max-width: 100%;
+}
 body {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 400;
@@ -94,19 +104,49 @@ body {
 
 /* LATEST WORK  */
 
-.rectangular-img {
-  /* display: block; */
-  /* width: 250px;
-  height: 350px; */
-  width: 70%;
+.latest-work-text {
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 3%;
 }
 
-.latest-work-position {
-  margin-top: 15%;
+/* SLIDER  */
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-.latest-work-img {
-  width: 70%;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 80%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+:root {
+  --swiper-theme-color: ##5f94a1;
 }
 
 /* HR  */
