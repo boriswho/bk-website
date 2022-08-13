@@ -20,7 +20,7 @@ body {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.7;
-  color: #395b64;
+  color: #a5c9ca;
   /* background-color: black; */
   padding: 3% 9%;
 }
@@ -28,7 +28,7 @@ body {
 /* NAVBAR */
 
 .dark-text {
-  color: #395b64;
+  color: #606c6c;
 }
 
 .upper-text {
@@ -65,7 +65,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .heading-primary {
-  color: #395b64;
+  color: #606c6c;
   text-transform: uppercase;
 }
 .heading-primary-top {
@@ -73,34 +73,38 @@ body {
   font-weight: 400;
   display: block;
   text-transform: lowercase;
-  transform: translateX(-15%);
+  transform: translateX(-55px);
+  animation: moveInLeftHeader 1.5s ease-out;
+  /* animation-delay: 0.3s; */
 }
 .heading-primary-main {
   font-size: 5rem;
   display: block;
-  color: #5f94a1;
+  color: #a5c9ca;
+  animation: moveInLeft 1s ease-out;
 }
 .heading-primary-bottom {
   font-size: 1.3rem;
   font-weight: 400;
   display: block;
   text-transform: lowercase;
-  transform: translateX(95%);
+  transform: translateX(355px);
+  animation: moveInRightHeader 1.5s ease-out;
 }
 
-.large-text {
+/* .large-text {
   font-size: 5rem;
   color: #a5c9ca;
-}
+} */
 
-.title-text {
+/* .title-text {
   display: inline-block;
   margin-top: 6%;
-}
+} */
 
-.small-text {
+/* .small-text {
   font-size: 1.3rem;
-}
+} */
 
 /* LATEST WORK  */
 
@@ -108,7 +112,8 @@ body {
   font-weight: 400;
   font-size: 1.5rem;
   text-transform: uppercase;
-  margin-bottom: 3%;
+  margin-bottom: 5%;
+  color: #606c6c;
 }
 
 /* SLIDER  */
@@ -146,10 +151,43 @@ body {
 }
 
 :root {
-  --swiper-theme-color: ##5f94a1;
+  --swiper-theme-color: #606c6c;
 }
 
 /* HR  */
 .hr-circle {
   margin-top: 2%;
+}
+
+/* ANIMATION */
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInLeftHeader {
+  0% {
+    opacity: 0;
+    transform: translateX(-155px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-55px);
+  }
+}
+@keyframes moveInRightHeader {
+  0% {
+    opacity: 0;
+    transform: translateX(430px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(355px);
+  }
 }

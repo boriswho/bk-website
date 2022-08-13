@@ -119,6 +119,18 @@
   </section>
   <hr class="hr-circle">
 
+  <section id="about">
+    <div class="">
+      <div class="">
+        <h1>
+          <span class="">who</span>
+          <span class="">we</span>
+          <span class="">are</span>
+        </h1>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -126,7 +138,7 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 5,
+      slidesPerView: 1,
       spaceBetween: 0,
       // slidesPerGroup: 3,
       loop: true,
@@ -135,6 +147,17 @@
       //   el: ".swiper-pagination",
       //   clickable: true,
       // },
+      breakpoints: {
+        //check the correct dimentions later
+        1200: {
+          slidesPerView: 5,
+          spaceBetween: 0
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 0
+        }
+      },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
