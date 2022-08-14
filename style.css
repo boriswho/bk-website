@@ -187,6 +187,32 @@ body {
   transform: translateX(110px);
 }
 
+.about-text-border {
+  border: 1px solid #606c6c;
+}
+
+.text-align {
+  width: 40%;
+  margin: auto;
+}
+
+.colored-text-about {
+  font-size: 2.5rem;
+  color: #a5c9ca;
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  letter-spacing: 3px;
+  padding: 10px;
+}
+
+/* .bye-now {
+} */
+
 /* HR  */
 .hr-circle {
   margin-top: 2%;
@@ -222,5 +248,18 @@ body {
   100% {
     opacity: 1;
     transform: translateX(355px);
+  }
+}
+
+@media (max-width: 900px) {
+  .text-align {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (max-width: 1200px) {
+  .text-align {
+    width: 70%;
+    margin: auto;
   }
 }
