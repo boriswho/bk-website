@@ -70,7 +70,9 @@ body {
   font-weight: 400;
   display: block;
   transform: translateX(-55px);
-  animation: moveInLeftHeader 1.5s ease-out;
+  animation: moveInLeftHeader 1.2s ease-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
   /* animation-delay: 0.3s; */
 }
 .heading-primary-main {
@@ -85,7 +87,9 @@ body {
   font-weight: 400;
   display: block;
   transform: translateX(355px);
-  animation: moveInRightHeader 1.5s ease-out;
+  animation: moveInRightHeader 1.2s ease-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
 }
 
 /* .large-text {
@@ -203,7 +207,7 @@ body {
 @keyframes moveInLeftHeader {
   0% {
     opacity: 0;
-    transform: translateX(-155px);
+    transform: translateX(-100px);
   }
   100% {
     opacity: 1;
@@ -213,7 +217,7 @@ body {
 @keyframes moveInRightHeader {
   0% {
     opacity: 0;
-    transform: translateX(430px);
+    transform: translateX(385px);
   }
   100% {
     opacity: 1;
