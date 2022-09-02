@@ -1,0 +1,57 @@
+/* ABOUT */
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  max-width: 50rem;
+  margin: 6.4rem auto;
+
+  &__top {
+    font-size: 2.8rem;
+    font-weight: 400;
+    transform: translateX(12rem);
+  }
+
+  &__main {
+    font-size: 6.4rem;
+    color: $color-blue-lighter;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__bottom {
+    text-align: right;
+    font-size: 2.8rem;
+    font-weight: 400;
+    transform: translateX(-13rem);
+  }
+}
+
+.about-text {
+  margin: 15rem 0;
+
+  &__border {
+    border: 0.07rem solid $color-grey;
+  }
+
+  &__colored {
+    font-size: 4rem;
+    color: $color-blue-lighter;
+    text-transform: uppercase;
+    padding-right: 1rem;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.7;
+    letter-spacing: 0.3rem;
+    padding: 1rem;
+  }
+}
+
+/* .bye-now {
+    } */

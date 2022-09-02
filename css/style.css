@@ -1,0 +1,321 @@
+/* ANIMATION */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInLeftTop {
+  0% {
+    opacity: 0;
+    transform: translateX(-9rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(-6rem); } }
+
+@keyframes moveInRightBottom {
+  0% {
+    opacity: 0;
+    transform: translateX(51rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(48rem); } }
+
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(7rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@media (max-width: 600px) {
+  .text-align {
+    width: 70%;
+    margin: auto; } }
+
+@media (max-width: 1200px) {
+  .text-align {
+    width: 50%;
+    margin: auto; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* we always want to specify everything Font related in the Body element instead of the Universal selector */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  /* above we are setting the initial font size that becomes our "rem". We use 10px for easier calculations in future. So now 1rem is 10px, not 16px */
+  /* we set it to % instead of px for accessibility reasons. If the user wants to increase the font size of the browser, % value will adapt and px will not */ }
+
+img {
+  max-width: 100%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  /* font-size: 1.6rem; */
+  line-height: 1.7;
+  color: #606c6c;
+  /* background-color: black; */
+  padding: 5rem;
+  box-sizing: border-box; }
+
+.heading-secondary {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 1;
+  max-width: 50rem;
+  margin: 8rem auto;
+  letter-spacing: 0.64rem;
+  font-size: 2.7rem;
+  font-weight: 400;
+  animation: moveInUp 1.5s ease-out;
+  animation-delay: 0.7s;
+  animation-fill-mode: backwards;
+  text-align: center; }
+
+.text-align {
+  width: 35%;
+  margin: auto;
+  text-align: center; }
+
+/* LATEST WORK  */
+.latest-work {
+  margin: 15rem 0; }
+  .latest-work__text {
+    font-weight: 400;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    /* margin-bottom: 5%; */
+    color: #606c6c; }
+
+/* HR  */
+.hr-circle {
+  margin-top: 2%; }
+
+/* ABOUT */
+.text-box {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  max-width: 50rem;
+  margin: 6.4rem auto; }
+  .text-box__top {
+    font-size: 2.8rem;
+    font-weight: 400;
+    transform: translateX(12rem); }
+  .text-box__main {
+    font-size: 6.4rem;
+    color: #a5c9ca;
+    text-transform: uppercase;
+    text-align: center; }
+  .text-box__bottom {
+    text-align: right;
+    font-size: 2.8rem;
+    font-weight: 400;
+    transform: translateX(-13rem); }
+
+.about-text {
+  margin: 15rem 0; }
+  .about-text__border {
+    border: 0.07rem solid #606c6c; }
+  .about-text__colored {
+    font-size: 4rem;
+    color: #a5c9ca;
+    text-transform: uppercase;
+    padding-right: 1rem; }
+  .about-text__text {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.7;
+    letter-spacing: 0.3rem;
+    padding: 1rem; }
+
+/* .bye-now {
+    } */
+/* FOOTER  */
+.footer {
+  margin-top: 5rem;
+  height: 15rem;
+  text-align: center; }
+  .footer__icons {
+    margin: 3rem 2rem 2rem 2rem;
+    font-size: 1.2rem; }
+  .footer__copyright {
+    margin-top: 6.4rem;
+    font-size: 1.6rem; }
+
+/* HEADER  */
+.heading-primary {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  max-width: 50rem;
+  margin: 2rem auto; }
+  .heading-primary__top {
+    font-size: 2.4rem;
+    font-weight: 400;
+    transform: translateX(-6rem);
+    animation: moveInLeftTop 1.2s ease-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: backwards;
+    animation-delay: 0.3s; }
+  .heading-primary__main {
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: #a5c9ca;
+    text-align: center;
+    animation: moveInLeft 1s ease-out; }
+  .heading-primary__bottom {
+    font-size: 2.4rem;
+    font-weight: 400;
+    transform: translateX(48rem);
+    animation: moveInRightBottom 1.2s ease-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: backwards; }
+
+/* NAVBAR */
+.navbar {
+  font-size: 1.5rem; }
+
+.dark-text {
+  color: #606c6c; }
+
+.upper-text {
+  text-transform: uppercase; }
+
+.nav-link:hover {
+  color: #5f94a1; }
+
+.nav-link:focus {
+  color: #395b64; }
+
+.dropdown-menu {
+  border: none;
+  background-color: transparent; }
+
+/* TESTIMONIALS */
+.text-box-testimonials {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  max-width: 50rem;
+  margin: 6.4rem auto; }
+  .text-box-testimonials__top-testimonials {
+    font-size: 2.8rem;
+    font-weight: 400;
+    transform: translateX(7rem); }
+  .text-box-testimonials__main-testimonials {
+    font-size: 4rem;
+    color: #a5c9ca;
+    text-transform: uppercase;
+    text-align: center; }
+  .text-box-testimonials__bottom-testimonials {
+    text-align: right;
+    font-size: 2.8rem;
+    font-weight: 400;
+    transform: translateX(-8rem); }
+
+.testimonial {
+  margin: 7rem 0;
+  text-align: center; }
+  .testimonial__height {
+    /* height: 450px; */
+    padding-bottom: 4rem;
+    /* margin-bottom: 300px; */ }
+  .testimonial__image {
+    width: 15rem;
+    clip-path: circle();
+    margin: 2rem; }
+  .testimonial__text {
+    font-size: 1.9rem;
+    line-height: 1.5;
+    font-weight: 400;
+    /* width: 60%; */
+    /* text-align: center; */
+    /* width: 50%; */ }
+  .testimonial__name {
+    font-size: 1.8rem;
+    color: #a5c9ca;
+    text-align: right; }
+
+/* SLIDER  */
+.swiper {
+  width: 100%;
+  height: 100%; }
+  .swiper-slide {
+    text-align: center;
+    font-size: 1.8rem;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: 250ms transform; }
+    .swiper-slide img {
+      display: block;
+      width: 80%;
+      /* height: 100%; */
+      object-fit: cover;
+      border-radius: 1.5rem; }
+    .swiper-slide:hover {
+      transform: scale(1.2); }
+  .swiper-wrapper {
+    padding: 5rem 0 8rem 0; }
+  .swiper-button-prev {
+    color: #606c6c;
+    transform: translateX(-0.8rem); }
+  .swiper-button-next {
+    color: #606c6c;
+    transform: translateX(0.8rem); }
+  .swiper-button-next:hover, .swiper-button-prev:hover {
+    color: #a5c9ca;
+    /* transform: translate(-70px, -30px); */ }
+  .swiper-pagination {
+    height: 8rem;
+    transform: translateY(7rem); }
+  .swiper-pagination-bullet-active {
+    background-color: #606c6c; }
+
+.carousel-item {
+  height: 40rem; }
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 0.8rem;
+  height: 0.8rem; }
+
+.carousel-indicators {
+  bottom: -5rem; }

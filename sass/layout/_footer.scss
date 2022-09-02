@@ -1,0 +1,16 @@
+/* FOOTER  */
+.footer {
+  margin-top: 5rem;
+  height: 15rem;
+  text-align: center;
+
+  &__icons {
+    margin: 3rem 2rem 2rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  &__copyright {
+    margin-top: 6.4rem;
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* we always want to specify everything Font related in the Body element instead of the Universal selector */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  //this difines what 1 rem is
+  font-size: 62.5%;
+
+  /* above we are setting the initial font size that becomes our "rem". We use 10px for easier calculations in future. So now 1rem is 10px, not 16px */
+  /* we set it to % instead of px for accessibility reasons. If the user wants to increase the font size of the browser, % value will adapt and px will not */
+}
+
+img {
+  max-width: 100%;
+}
+body {
+  box-sizing: border-box;
+}

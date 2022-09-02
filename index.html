@@ -21,7 +21,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/705efaadea.js" crossorigin="anonymous"></script>
@@ -76,9 +76,9 @@
       <!-- <div class="text-box"> -->
 
       <h1 class="heading-primary">
-        <span class="heading-primary-top">we create</span>
-        <span class="heading-primary-main">amazing</span>
-        <span class="heading-primary-bottom">photos</span>
+        <span class="heading-primary__top">we create</span>
+        <span class="heading-primary__main">amazing</span>
+        <span class="heading-primary__bottom">photos</span>
       </h1>
 
       <h2 class="heading-secondary">that sell</h2>
@@ -91,10 +91,10 @@
   <!-- LATEST WORK  -->
 
 
-  <section id="latest-work" class="latest-work-container">
+  <section id="latest-work" class="latest-work">
 
     <!-- TEXT  -->
-    <h2 class="latest-work-text container-fluid">latest work</h2>
+    <h2 class="latest-work__text container-fluid">latest work</h2>
 
     <!-- Swiper -->
 
@@ -127,17 +127,17 @@
 
   <section id="about">
     <div class="container-fluid">
-      <h2 class="text-box-other">
-        <span class="text-top">who</span>
-        <span class="text-main">we</span>
-        <span class="text-bottom">are</span>
+      <h2 class="text-box">
+        <span class="text-box__top">who</span>
+        <span class="text-box__main">we</span>
+        <span class="text-box__bottom">are</span>
       </h2>
 
 
 
-      <div class="row about-text-position">
-        <div class="col-lg-12  text-align about-text-border">
-          <h2 class="about-text"><span class="colored-text-about">We</span> are Boris and Kate. <br>
+      <div class="row about-text">
+        <div class="col-lg-12  text-align about-text__border">
+          <h2 class="about-text__text"><span class="about-text__colored">We</span> are Boris and Kate. <br>
             He is a photographer, and
             she is a stylist. Together we create photos that sell your products. We've been into this for almost 6
             years, and have a million happy clients who recommend us. Kindly check out the WORK tab and maybe you will
@@ -151,13 +151,13 @@
 
   <section id="testimonials">
     <div class="container-fluid">
-      <h2 class="text-box-other">
-        <span class="text-top-testimonials">what</span>
-        <span class="text-main-testimonials">people</span>
-        <span class="text-bottom-testimonials">say</span>
+      <h2 class="text-box-testimonials">
+        <span class="text-box-testimonials__top-testimonials">what</span>
+        <span class="text-box-testimonials__main-testimonials">people</span>
+        <span class="text-box-testimonials__bottom-testimonials">say</span>
       </h2>
 
-      <div id="carousel-testimonials" class="carousel slide carousel-dark testimonial-container" data-bs-ride="false">
+      <div id="carousel-testimonials" class="carousel slide carousel-dark testimonial" data-bs-ride="false">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carousel-testimonials" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -166,34 +166,34 @@
           <button type="button" data-bs-target="#carousel-testimonials" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner testimonial-container-height">
+        <div class="carousel-inner testimonial__height">
           <div class="carousel-item active container-fluid ">
             <div class="row ">
               <div class="col-lg-12 text-align">
-                <img class="testimonial-image"
+                <img class="testimonial__image"
                   src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
                   alt="lady-profile">
-                <h2 class="testimonial-text ">
+                <h2 class="testimonial__text ">
                   They are so easy to work with! Pictures are amazing! My sales bumped up 150% with the help from
                   amazing
                   Boris and Kate! Can't recommend them enough! Big love to both of you!
                 </h2>
-                <h2 class="testimonial-name">-Suzy</h2>
+                <h2 class="testimonial__name">-Suzy</h2>
               </div>
             </div>
           </div>
           <div class="carousel-item container-fluid">
-            <div class="row testimonial-container-height">
+            <div class="row testimonial__height">
               <div class="col-lg-12 text-align ">
-                <img class="testimonial-image"
+                <img class="testimonial__image"
                   src="https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=846&q=80"
                   alt="lady-profile">
-                <h2 class="testimonial-text">
+                <h2 class="testimonial__text">
                   They are so easy to work with! Pictures are amazing! My sales bumped up 150% with the help from
                   amazing
                   Boris and Kate! Can't recommend them enough! Big love to both of you!
                 </h2>
-                <h2 class="testimonial-name">-Brian</h2>
+                <h2 class="testimonial__name">-Brian</h2>
               </div>
             </div>
 
@@ -215,13 +215,13 @@
   <hr class="hr-circle">
 
   <footer id="footer">
-    <div class="container-fluid footer-section">
-      <h2 class="testimonial-text">get in touch</h2>
+    <div class="container-fluid footer">
+      <h2 class="testimonial__text">get in touch</h2>
       <!-- <i class="fa-brands fa-twitter footer-icons"></i> -->
-      <i class="fa-brands fa-facebook footer-icons"></i>
-      <i class="fa-brands fa-instagram footer-icons"></i>
-      <i class="fa-solid fa-envelope footer-icons"></i>
-      <p class="copyright">© Tiny Fire</p>
+      <i class="fa-brands fa-facebook footer__icons"></i>
+      <i class="fa-brands fa-instagram footer__icons"></i>
+      <i class="fa-solid fa-envelope footer__icons"></i>
+      <p class="footer__copyright">© Tiny Fire</p>
     </div>
   </footer>
 

@@ -1,0 +1,24 @@
+/* NAVBAR */
+.navbar {
+  font-size: 1.5rem;
+}
+
+.dark-text {
+  color: $color-grey;
+}
+
+.upper-text {
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: $color-blue-light;
+}
+.nav-link:focus {
+  color: $color-blue-dark;
+}
+
+.dropdown-menu {
+  border: none;
+  background-color: transparent;
+}
