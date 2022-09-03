@@ -3,9 +3,11 @@
 const dropdownFood = document.querySelector(".dropdown-food");
 const dropdownPortrait = document.querySelector(".dropdown-portrait");
 const dropdownEvent = document.querySelector(".dropdown-event");
+const dropdownFoodPopup = document.getElementById("food");
 
 dropdownFood.addEventListener("click", function () {
   console.log("Clicked food");
+  // dropdownFoodPopup.classList.remove("non-active");
 });
 dropdownPortrait.addEventListener("click", function () {
   console.log("Clicked portrait");
