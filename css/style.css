@@ -91,11 +91,6 @@ body {
   animation-fill-mode: backwards;
   text-align: center; }
 
-.text-align {
-  width: 35%;
-  margin: auto;
-  text-align: center; }
-
 /* LATEST WORK  */
 .latest-work {
   margin: 15rem 0; }
@@ -109,6 +104,11 @@ body {
 /* HR  */
 .hr-circle {
   margin-top: 2%; }
+
+.u-center-text {
+  width: 35%;
+  text-align: center;
+  margin: auto; }
 
 /* ABOUT */
 .text-box {
