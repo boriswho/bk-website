@@ -72,7 +72,7 @@ body {
   line-height: 1.7;
   color: #606c6c;
   /* background-color: black; */
-  padding: 5rem;
+  padding: 5rem 15rem;
   box-sizing: border-box; }
 
 .heading-secondary {
@@ -89,6 +89,19 @@ body {
   animation: moveInUp 1.5s ease-out;
   animation-delay: 0.7s;
   animation-fill-mode: backwards;
+  text-align: center; }
+
+.heading-tetrtiary {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 1;
+  max-width: 50rem;
+  margin: 2rem auto 3rem auto;
+  letter-spacing: 0.64rem;
+  font-size: 2.7rem;
+  font-weight: 400;
   text-align: center; }
 
 /* LATEST WORK  */
@@ -116,7 +129,7 @@ body {
 .u-img-padding {
   padding: 1rem; }
 
-.popup-food {
+.popup {
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -127,16 +140,16 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s; }
-  .popup-food:target {
+  .popup:target {
     opacity: 1;
     visibility: visible; }
-  .popup-food__close:link, .popup-food__close:visited {
-    color: #fff;
+  .popup__close:link, .popup__close:visited {
+    color: #606c6c;
     position: absolute;
-    top: 2.5rem;
-    right: 5rem;
-    font-size: 5rem; }
-  .popup-food__content {
+    top: 0.9rem;
+    right: 2.5rem;
+    font-size: 3.8rem; }
+  .popup__content {
     max-height: calc(100vh - 250px);
     overflow-y: auto;
     position: absolute;
@@ -145,10 +158,10 @@ body {
     transform: translate(-50%, -50%);
     width: 75%;
     padding: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 1rem; }
-    .popup-food__content::-webkit-scrollbar {
+    .popup__content::-webkit-scrollbar {
       display: none; }
 
 .non-active {
@@ -203,7 +216,7 @@ body {
   text-align: center; }
   .footer__icons {
     margin: 3rem 2rem 2rem 2rem;
-    font-size: 1.2rem; }
+    font-size: 1.8rem; }
   .footer__copyright {
     margin-top: 6.4rem;
     font-size: 1.6rem; }
@@ -305,6 +318,13 @@ body {
     font-size: 1.8rem;
     color: #a5c9ca;
     text-align: right; }
+
+.dropdown-menu {
+  font-size: 1.5rem; }
+
+.dropdown-item:focus {
+  color: #606c6c;
+  background-color: #e9ecef; }
 
 /* SLIDER  */
 .swiper {
