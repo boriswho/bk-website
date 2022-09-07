@@ -163,6 +163,79 @@ body {
     border-radius: 1rem; }
     .popup__content::-webkit-scrollbar {
       display: none; }
+  .popup__contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    min-height: 50%;
+    padding: 1.5rem;
+    background-color: #e9ecef;
+    border-radius: 1.5rem; }
+    .popup__contact--info {
+      max-width: 50rem;
+      line-height: 6rem;
+      font-size: 1.8rem;
+      flex: 1; }
+      .popup__contact--info i {
+        margin-right: 2rem;
+        font-size: 2.5rem; }
+    .popup__contact--form {
+      max-width: 70rem;
+      flex: 1; }
+      .popup__contact--form .contact-text-box {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        width: calc(50% - 1rem);
+        height: 5rem;
+        padding: 1.2rem;
+        font-size: 1.8rem;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+        opacity: 0.8; }
+        .popup__contact--form .contact-text-box:first-child {
+          margin-right: 1.5rem; }
+      .popup__contact--form h2 {
+        text-align: center;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        margin-bottom: 3rem; }
+      .popup__contact--form textarea {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        width: 100%;
+        padding: 1.2rem;
+        font-size: 1.8rem;
+        min-height: 20rem;
+        max-height: 40rem;
+        resize: vertical;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+        opacity: 0.8; }
+    .popup__contact--send-btn {
+      float: right;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #e9ecef;
+      border: none;
+      width: 120px;
+      height: 40px;
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      transition-property: background; }
+      .popup__contact--send-btn:hover {
+        background-color: rgba(0, 0, 0, 0.6); }
+  .popup__contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 .non-active {
   display: none; }
