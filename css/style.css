@@ -129,6 +129,9 @@ body {
 .u-img-padding {
   padding: 1rem; }
 
+.u-unstyled-link {
+  list-style: none; }
+
 .popup {
   height: 100vh;
   width: 100%;
