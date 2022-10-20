@@ -22,3 +22,26 @@
   border: none;
   background-color: transparent;
 }
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  box-shadow: none;
+}
+.navbar-toggler:focus:hover,
+.navbar-toggler:active:hover,
+.navbar-toggler:hover {
+  box-shadow: 0 0 3px 0.1px $color-blue-dark;
+}
+.nav-logo {
+  width: 12%;
+}
+.dropdown-menu {
+  font-size: 1.5rem;
+}
+
+.dropdown-item {
+  &:focus {
+    color: $color-grey;
+    background-color: $color-grey-light;
+  }
+}
